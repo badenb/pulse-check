@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "WeeklyReportBackend",
+    name: "PulseCheck",
     platforms: [
        .macOS(.v13)
     ],
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "WeeklyReportBackend",
+            name: "PulseCheck",
             dependencies: [
                 .product(name: "Fluent", package: "fluent"),
                 .product(name: "FluentPostgresDriver", package: "fluent-postgres-driver"),
@@ -29,9 +29,9 @@ let package = Package(
             swiftSettings: swiftSettings
         ),
         .testTarget(
-            name: "WeeklyReportBackendTests",
+            name: "PulseCheckTests",
             dependencies: [
-                .target(name: "WeeklyReportBackend"),
+                .target(name: "PulseCheck"),
                 .product(name: "VaporTesting", package: "vapor"),
             ],
             swiftSettings: swiftSettings

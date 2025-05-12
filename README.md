@@ -1,4 +1,4 @@
-# WeeklyReportBackend
+# Pulse Check (Backend)
 
 💧 A project built with the Vapor web framework.
 
